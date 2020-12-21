@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cordic.h" path="C:\Users\user-pc\Desktop\msoc\self_paced\upload\cordic_pp4fpga\cordic.h"/>
+    <originFiles name="cordic.cpp" path="C:\Users\user-pc\Desktop\msoc\self_paced\upload\cordic_pp4fpga\cordic.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="cordic_top.cpp" path="C:\Users\user-pc\Desktop\msoc\self_paced\upload\cordic_pp4fpga\cordic_top.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vivado HLS Report for 'cordic'
+================================================================
+* Date:           Sun Dec 20 21:12:05 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        cordic_hls
+* Solution:       baseline
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.627 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       65|       65| 0.650 us | 0.650 us |   65|   65|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- L1      |       64|       64|         2|          -|          -|    32|    no    |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i12 %theta_V), !map !84"   --->   Operation 4 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i12* %s_V), !map !90"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i12* %c_V), !map !94"   --->   Operation 6 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @cordic_str) nounwind"   --->   Operation 7 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%theta_V_read = call i12 @_ssdm_op_Read.ap_auto.i12(i12 %theta_V)" [cordic.cpp:8]   --->   Operation 8 'read' 'theta_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i12.i32(i12 %theta_V_read, i32 11)" [cordic.cpp:20]   --->   Operation 9 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.76ns)   --->   "br label %0" [cordic.cpp:18]   --->   Operation 10 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 8.62>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%factor_0 = phi i12 [ 1024, %ap_fixed_base.exit404 ], [ %r_V_7, %_ZltILi12ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit ]"   --->   Operation 11 'phi' 'factor_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%p_Val2_4 = phi i12 [ 0, %ap_fixed_base.exit404 ], [ %current_sin_V, %_ZltILi12ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit ]"   --->   Operation 12 'phi' 'p_Val2_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%p_Val2_2 = phi i12 [ 621, %ap_fixed_base.exit404 ], [ %current_cos_V, %_ZltILi12ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit ]"   --->   Operation 13 'phi' 'p_Val2_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%j_0 = phi i6 [ 0, %ap_fixed_base.exit404 ], [ %j, %_ZltILi12ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit ]"   --->   Operation 14 'phi' 'j_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (1.42ns)   --->   "%icmp_ln18 = icmp eq i6 %j_0, -32" [cordic.cpp:18]   --->   Operation 15 'icmp' 'icmp_ln18' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 16 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (1.82ns)   --->   "%j = add i6 %j_0, 1" [cordic.cpp:18]   --->   Operation 17 'add' 'j' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %icmp_ln18, label %1, label %_ZltILi12ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit" [cordic.cpp:18]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%sext_ln1116 = sext i12 %p_Val2_2 to i13" [cordic.cpp:23]   --->   Operation 19 'sext' 'sext_ln1116' <Predicate = (!icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.54ns)   --->   "%sub_ln1118 = sub i13 0, %sext_ln1116" [cordic.cpp:23]   --->   Operation 20 'sub' 'sub_ln1118' <Predicate = (!icmp_ln18 & tmp)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.69ns)   --->   "%r_V = select i1 %tmp, i13 %sub_ln1118, i13 %sext_ln1116" [cordic.cpp:23]   --->   Operation 21 'select' 'r_V' <Predicate = (!icmp_ln18)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%sext_ln1116_1 = sext i13 %r_V to i22" [cordic.cpp:23]   --->   Operation 22 'sext' 'sext_ln1116_1' <Predicate = (!icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%sext_ln1118 = sext i12 %factor_0 to i22" [cordic.cpp:23]   --->   Operation 23 'sext' 'sext_ln1118' <Predicate = (!icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (6.38ns) (root node of the DSP)   --->   "%r_V_5 = mul i22 %sext_ln1116_1, %sext_ln1118" [cordic.cpp:23]   --->   Operation 24 'mul' 'r_V_5' <Predicate = (!icmp_ln18)> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%cos_shift_V = call i12 @_ssdm_op_PartSelect.i12.i22.i32.i32(i22 %r_V_5, i32 10, i32 21)" [cordic.cpp:23]   --->   Operation 25 'partselect' 'cos_shift_V' <Predicate = (!icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%sext_ln1116_2 = sext i12 %p_Val2_4 to i13" [cordic.cpp:24]   --->   Operation 26 'sext' 'sext_ln1116_2' <Predicate = (!icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (1.54ns)   --->   "%sub_ln1118_1 = sub i13 0, %sext_ln1116_2" [cordic.cpp:24]   --->   Operation 27 'sub' 'sub_ln1118_1' <Predicate = (!icmp_ln18 & tmp)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.69ns)   --->   "%r_V_2 = select i1 %tmp, i13 %sub_ln1118_1, i13 %sext_ln1116_2" [cordic.cpp:24]   --->   Operation 28 'select' 'r_V_2' <Predicate = (!icmp_ln18)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%sext_ln1116_3 = sext i13 %r_V_2 to i22" [cordic.cpp:24]   --->   Operation 29 'sext' 'sext_ln1116_3' <Predicate = (!icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (6.38ns) (root node of the DSP)   --->   "%r_V_6 = mul i22 %sext_ln1116_3, %sext_ln1118" [cordic.cpp:24]   --->   Operation 30 'mul' 'r_V_6' <Predicate = (!icmp_ln18)> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%sin_shift_V = call i12 @_ssdm_op_PartSelect.i12.i22.i32.i32(i22 %r_V_6, i32 10, i32 21)" [cordic.cpp:24]   --->   Operation 31 'partselect' 'sin_shift_V' <Predicate = (!icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%trunc_ln = call i11 @_ssdm_op_PartSelect.i11.i12.i32.i32(i12 %factor_0, i32 1, i32 11)" [cordic.cpp:48]   --->   Operation 32 'partselect' 'trunc_ln' <Predicate = (!icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%r_V_7 = sext i11 %trunc_ln to i12" [cordic.cpp:48]   --->   Operation 33 'sext' 'r_V_7' <Predicate = (!icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i12P(i12* %s_V, i12 %p_Val2_4)" [cordic.cpp:52]   --->   Operation 34 'write' <Predicate = (icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i12P(i12* %c_V, i12 %p_Val2_2)" [cordic.cpp:52]   --->   Operation 35 'write' <Predicate = (icmp_ln18)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "ret void" [cordic.cpp:53]   --->   Operation 36 'ret' <Predicate = (icmp_ln18)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.54>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([3 x i8]* @p_str) nounwind" [cordic.cpp:18]   --->   Operation 37 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (1.54ns)   --->   "%current_cos_V = sub i12 %p_Val2_2, %sin_shift_V" [cordic.cpp:42]   --->   Operation 38 'sub' 'current_cos_V' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (1.54ns)   --->   "%current_sin_V = add i12 %cos_shift_V, %p_Val2_4" [cordic.cpp:43]   --->   Operation 39 'add' 'current_sin_V' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "br label %0" [cordic.cpp:18]   --->   Operation 40 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('r.V') with incoming values : ('r.V', cordic.cpp:48) [12]  (1.77 ns)
+
+ <State 2>: 8.63ns
+The critical path consists of the following:
+	'phi' operation ('current_sin.V') with incoming values : ('current_sin.V', cordic.cpp:43) [13]  (0 ns)
+	'sub' operation ('sub_ln1118_1', cordic.cpp:24) [30]  (1.55 ns)
+	'select' operation ('r.V', cordic.cpp:24) [31]  (0.7 ns)
+	'mul' operation of DSP[33] ('r.V', cordic.cpp:24) [33]  (6.38 ns)
+
+ <State 3>: 1.55ns
+The critical path consists of the following:
+	'sub' operation ('current_cos.V', cordic.cpp:42) [35]  (1.55 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

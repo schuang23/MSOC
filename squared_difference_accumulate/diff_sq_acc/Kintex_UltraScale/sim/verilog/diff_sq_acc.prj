@@ -1,0 +1,7 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_automem_a_V.v"
+sv xil_defaultlib "AESL_automem_b_V.v"
+sv xil_defaultlib "diff_sq_acc.autotb.v"
+sv xil_defaultlib "diff_sq_acc.v"
+sv xil_defaultlib "diff_sq_acc_ama_sbkb.v"
+

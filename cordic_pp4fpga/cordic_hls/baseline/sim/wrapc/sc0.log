@@ -1,0 +1,5 @@
+   Build using "D:/Vivado/2019.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling cordic_top.cpp_pre.cpp.tb.cpp
+   Compiling cordic.cpp_pre.cpp.tb.cpp
+   Compiling apatb_cordic.cpp
+   Generating cosim.tv.exe

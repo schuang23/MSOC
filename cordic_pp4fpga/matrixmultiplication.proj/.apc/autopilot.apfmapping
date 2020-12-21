@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matrixmultiplication.cpp" path="C:\Users\admin\msoc\pp4fpgas-master\examples\matrixmultiplication.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="matrixmultiplication-top.cpp" path="C:\Users\admin\msoc\pp4fpgas-master\examples\matrixmultiplication-top.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

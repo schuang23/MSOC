@@ -1,0 +1,5 @@
+sv work "glbl.v"
+sv xil_defaultlib "cordic.autotb.v"
+sv xil_defaultlib "cordic.v"
+sv xil_defaultlib "cordic_mul_mul_13bkb.v"
+
