@@ -825,16 +825,16 @@
       }
     },
     "interface_nets": {
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
-        ]
-      },
       "processing_system7_0_FIXED_IO": {
         "interface_ports": [
           "FIXED_IO",
           "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
         ]
       }
     },
@@ -843,7 +843,8 @@
         "ports": [
           "processing_system7_0/FCLK_CLK0",
           "diff_sq_acc_0/ap_clk",
-          "rst_ps7_0_100M/slowest_sync_clk"
+          "rst_ps7_0_100M/slowest_sync_clk",
+          "processing_system7_0/M_AXI_GP0_ACLK"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -856,6 +857,18 @@
         "ports": [
           "rst_ps7_0_100M/peripheral_reset",
           "diff_sq_acc_0/ap_rst"
+        ]
+      },
+      "processing_system7_0_TTC0_WAVE0_OUT": {
+        "ports": [
+          "processing_system7_0/TTC0_WAVE0_OUT",
+          "diff_sq_acc_0/a_V_q0"
+        ]
+      },
+      "processing_system7_0_TTC0_WAVE1_OUT": {
+        "ports": [
+          "processing_system7_0/TTC0_WAVE1_OUT",
+          "diff_sq_acc_0/b_V_q0"
         ]
       }
     },

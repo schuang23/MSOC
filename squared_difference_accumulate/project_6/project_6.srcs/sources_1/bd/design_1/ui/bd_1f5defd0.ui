@@ -1,22 +1,24 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-191,-470",
+   "Default View_TopLeft":"-186,-483",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 3 -x 770 -y -270 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 3 -x 770 -y -250 -defaultsOSRD
-preplace inst diff_sq_acc_0 -pg 1 -lvl 2 -x 580 -y -90 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 3 -x 790 -y -270 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 3 -x 790 -y -250 -defaultsOSRD
+preplace inst diff_sq_acc_0 -pg 1 -lvl 2 -x 600 -y -90 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -x 180 -y -190 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 580 -y -370 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 1 1 400 -410n
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 390 -390n
-preplace netloc rst_ps7_0_100M_peripheral_reset 1 1 2 410 -200 750
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 600 -y -370 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 -30 -330 420
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 410 -390n
+preplace netloc rst_ps7_0_100M_peripheral_reset 1 1 2 430 -200 770
+preplace netloc processing_system7_0_TTC0_WAVE0_OUT 1 1 1 400 -190n
+preplace netloc processing_system7_0_TTC0_WAVE1_OUT 1 1 1 390 -170n
 preplace netloc processing_system7_0_DDR 1 1 2 NJ -270 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 1 2 NJ -250 NJ
-levelinfo -pg 1 -40 180 580 770
-pagesize -pg 1 -db -bbox -sgen -40 -470 890 220
+levelinfo -pg 1 -50 180 600 790
+pagesize -pg 1 -db -bbox -sgen -50 -470 910 220
 "
 }
 {
