@@ -1,11 +1,12 @@
-# Jini-Intelligent-Computing-Lab2
+# squared_difference_accumulate
+
 
 
 
 <br />
 <p align="center">
 
-  <h3 align="center">MSOC-HLS project github template</h3>
+  <h3 align="center">MSOC-HLS project github </h3>
   
 </p>
 
