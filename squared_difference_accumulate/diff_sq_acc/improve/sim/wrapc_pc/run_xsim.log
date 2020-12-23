@@ -52,8 +52,8 @@ Built simulation snapshot diff_sq_acc
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/improve/sim/verilog/xsim.dir/diff_sq_acc/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/improve/sim/verilog/xsim.dir/diff_sq_acc/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Dec 21 17:40:29 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Mon Dec 21 17:40:29 2020...
+INFO: [Common 17-186] 'C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/improve/sim/verilog/xsim.dir/diff_sq_acc/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Dec 23 13:52:46 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 23 13:52:46 2020...
 
 ****** xsim v2019.2 (64-bit)
   **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
@@ -135,7 +135,7 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 770 ns : File "C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/improve/sim/verilog/diff_sq_acc.autotb.v" Line 323
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Dec 21 17:40:36 2020...
+INFO: [Common 17-206] Exiting xsim at Wed Dec 23 13:52:53 2020...
 got 442798871 expected 442798871
 got 262947932 expected 262947932
 got 314183194 expected 314183194

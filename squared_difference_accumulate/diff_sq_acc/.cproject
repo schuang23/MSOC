@@ -51,19 +51,17 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.645870307" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Users/user-pc/Desktop/msoc/self_paced/upload/squared_difference_accumulate"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/include"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
                                     								
                                 </option>
                                 								
@@ -89,19 +87,17 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.915094765" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Users/user-pc/Desktop/msoc/self_paced/upload/squared_difference_accumulate"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/include"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
                                     								
                                 </option>
                                 								
@@ -123,7 +119,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.928496458" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -137,7 +133,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.640366980" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -173,17 +169,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1911822116" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="C:/Users/user-pc/Desktop/msoc/self_paced/upload/squared_difference_accumulate"/>
+                                <listOptionValue builtIn="false" value="C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/ap_sysc"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/etc"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/include"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
                                 							
                             </option>
                             							
@@ -257,19 +253,17 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.175437860" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Users/user-pc/Desktop/msoc/self_paced/upload/squared_difference_accumulate"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/include"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
                                     								
                                 </option>
                                 								
@@ -285,19 +279,17 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.2090369665" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Users/user-pc/Desktop/msoc/self_paced/upload/squared_difference_accumulate"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/include"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
                                     								
                                 </option>
                                 								
@@ -309,7 +301,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.1485466380" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -323,7 +315,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.1257749807" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -359,17 +351,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.465747290" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="C:/Users/user-pc/Desktop/msoc/self_paced/upload/squared_difference_accumulate"/>
+                                <listOptionValue builtIn="false" value="C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/ap_sysc"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include/etc"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/include"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/include/ap_sysc"/>
                                 								
-                                <listOptionValue builtIn="false" value="D:/Vivado/2019.2/win64/tools/systemc/include"/>
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
                                 							
                             </option>
                             							
