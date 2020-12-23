@@ -8,11 +8,12 @@ set_top diff_sq_acc
 add_files src/diff_sq_acc.cpp
 add_files -tb tb/diff_sq_acc_tb.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "Kintex_UltraScale"
-set_part {xcku035-fbva676-1-i}
+set_part {xc7z020clg400-1}
 create_clock -period 4.0 -name default
-config_export -format ipxact
-#source "./diff_sq_acc/Kintex_UltraScale/directives.tcl"
+config_sdx -optimization_level none -target none
+config_export -format ip_catalog -rtl verilog -vivado_optimization_level 2
+source "./diff_sq_acc/Kintex_UltraScale/directives.tcl"
 csim_design
 csynth_design
 cosim_design -trace_level all -tool xsim
-export_design -format ip_catalog
+export_design -rtl verilog -format ip_catalog

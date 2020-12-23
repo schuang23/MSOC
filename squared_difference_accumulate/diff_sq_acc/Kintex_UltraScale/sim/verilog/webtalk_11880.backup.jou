@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Dec 23 18:13:06 2020
+# Process ID: 11880
+# Current directory: D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog
+# Command line: wbtcv.exe -mode batch -source D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/xsim.dir/diff_sq_acc/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/webtalk.log
+# Journal file: D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/xsim.dir/diff_sq_acc/webtalk/xsim_webtalk.tcl -notrace

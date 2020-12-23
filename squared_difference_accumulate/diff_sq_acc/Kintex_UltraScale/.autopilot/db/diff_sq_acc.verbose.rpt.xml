@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'diff_sq_acc'" level="0">
-<item name = "Date">Mon Dec 21 17:38:12 2020
+<item name = "Date">Wed Dec 23 18:12:03 2020
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">diff_sq_acc</item>
 <item name = "Solution">Kintex_UltraScale</item>
-<item name = "Product family">kintexu</item>
-<item name = "Target device">xcku035-fbva676-1-i</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">4.00 ns, 3.187 ns, 0.50 ns</column>
+<column name="ap_clk">4.00 ns, 3.127 ns, 0.50 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">31, 31, 0.124 us, 0.124 us, 31, 31, none</column>
+<column name="">15, 15, 60.000 ns, 60.000 ns, 15, 15, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">30, 30, 3, -, -, 10, no</column>
+<column name="- Loop 1">13, 13, 5, 1, 1, 10, yes</column>
 </table>
 </item>
 </section>
@@ -48,25 +48,26 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, 1, -, -, -</column>
-<column name="Expression">-, -, 0, 21, -</column>
+<column name="Expression">-, -, 0, 50, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, -, -, -</column>
+<column name="Instance">4, -, 250, 276, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 45, -</column>
-<column name="Register">-, -, 44, -, -</column>
-<specialColumn name="Available">1080, 1700, 406256, 203128, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+<column name="Multiplexer">-, -, -, 57, -</column>
+<column name="Register">0, -, 141, 32, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">1, ~0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="diff_sq_acc_AXILiteS_s_axi_U">diff_sq_acc_AXILiteS_s_axi, 4, 0, 250, 276, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="diff_sq_acc_ama_sbkb_U1">diff_sq_acc_ama_sbkb, (i0 - i1) * (i0 - i1) + i2</column>
+<column name="diff_sq_acc_mac_mbkb_U1">diff_sq_acc_mac_mbkb, i0 * i0 + i1</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -79,23 +80,36 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_fu_90_p2">+, 0, 0, 12, 4, 1</column>
-<column name="icmp_ln38_fu_84_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="i_fu_116_p2">+, 0, 0, 13, 4, 1</column>
+<column name="sub_fu_134_p2">-, 0, 0, 24, 17, 17</column>
+<column name="icmp_ln38_fu_110_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">27, 5, 1, 5</column>
-<column name="i_0_reg_61">9, 2, 4, 8</column>
-<column name="val_assign_reg_72">9, 2, 32, 64</column>
+<column name="ap_NS_fsm">21, 4, 1, 4</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter4">9, 2, 1, 2</column>
+<column name="i_0_reg_87">9, 2, 4, 8</column>
+<column name="val_assign_reg_98">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">4, 0, 4, 0</column>
-<column name="i_0_reg_61">4, 0, 4, 0</column>
-<column name="i_reg_126">4, 0, 4, 0</column>
-<column name="val_assign_reg_72">32, 0, 32, 0</column>
+<column name="a_V_load_reg_176">16, 0, 16, 0</column>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="b_V_load_reg_181">16, 0, 16, 0</column>
+<column name="i_0_reg_87">4, 0, 4, 0</column>
+<column name="icmp_ln38_reg_157">1, 0, 1, 0</column>
+<column name="val_assign_reg_98">32, 0, 32, 0</column>
+<column name="icmp_ln38_reg_157">64, 32, 1, 0</column>
 </table>
 </item>
 </section>
@@ -105,20 +119,26 @@
 <section name = "Interface" level="0">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 7, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 7, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, pointer</column>
 <column name="ap_clk">in, 1, ap_ctrl_hs, diff_sq_acc, return value</column>
-<column name="ap_rst">in, 1, ap_ctrl_hs, diff_sq_acc, return value</column>
-<column name="ap_start">in, 1, ap_ctrl_hs, diff_sq_acc, return value</column>
-<column name="ap_done">out, 1, ap_ctrl_hs, diff_sq_acc, return value</column>
-<column name="ap_idle">out, 1, ap_ctrl_hs, diff_sq_acc, return value</column>
-<column name="ap_ready">out, 1, ap_ctrl_hs, diff_sq_acc, return value</column>
-<column name="a_V_address0">out, 4, ap_memory, a_V, array</column>
-<column name="a_V_ce0">out, 1, ap_memory, a_V, array</column>
-<column name="a_V_q0">in, 16, ap_memory, a_V, array</column>
-<column name="b_V_address0">out, 4, ap_memory, b_V, array</column>
-<column name="b_V_ce0">out, 1, ap_memory, b_V, array</column>
-<column name="b_V_q0">in, 16, ap_memory, b_V, array</column>
-<column name="dout_V">out, 48, ap_vld, dout_V, pointer</column>
-<column name="dout_V_ap_vld">out, 1, ap_vld, dout_V, pointer</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, diff_sq_acc, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, diff_sq_acc, return value</column>
 </table>
 </item>
 </section>

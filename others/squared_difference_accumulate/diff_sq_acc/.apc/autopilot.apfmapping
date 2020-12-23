@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="diff_sq_acc.cpp" path="C:\Users\user-pc\Desktop\msoc\self_paced\upload\squared_difference_accumulate\src\diff_sq_acc.cpp"/>
-  </source>
-  <testbench>
-    <originFiles name="diff_sq_acc_tb.cpp" path="C:\Users\user-pc\Desktop\msoc\self_paced\upload\squared_difference_accumulate\tb\diff_sq_acc_tb.cpp"/>
-  </testbench>
-</autopilotfilemapping:AutoPilotFileMapping>

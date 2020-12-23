@@ -10,38 +10,40 @@ got 220538590 expected 220538590
 got 229031173 expected 229031173
 TEST SUCCESS!
 
-C:\Users\admin\msoc\HLx_Examples-master\Math\squared_difference_accumulate\diff_sq_acc\Kintex_UltraScale\sim\verilog>set PATH= 
+D:\msoc\HLx_Examples-master\Math\squared_difference_accumulate\diff_sq_acc\Kintex_UltraScale\sim\verilog>set PATH= 
 
-C:\Users\admin\msoc\HLx_Examples-master\Math\squared_difference_accumulate\diff_sq_acc\Kintex_UltraScale\sim\verilog>call C:/Xilinx/Vivado/2019.2/bin/xelab xil_defaultlib.apatb_diff_sq_acc_top glbl -prj diff_sq_acc.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s diff_sq_acc -debug wave 
-INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+D:\msoc\HLx_Examples-master\Math\squared_difference_accumulate\diff_sq_acc\Kintex_UltraScale\sim\verilog>call D:/Vivado/2019.2/bin/xelab xil_defaultlib.apatb_diff_sq_acc_top glbl -prj diff_sq_acc.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "D:/Vivado/2019.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s diff_sq_acc -debug wave 
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "D:/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_diff_sq_acc_top glbl -prj diff_sq_acc.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s diff_sq_acc -debug wave 
-Multi-threading is on. Using 10 slave threads.
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/glbl.v" into library work
+Running: D:/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_diff_sq_acc_top glbl -prj diff_sq_acc.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile D:/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s diff_sq_acc -debug wave 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/AESL_automem_a_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_a_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/AESL_automem_b_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_b_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/AESL_axi_slave_AXILiteS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_AXILiteS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_diff_sq_acc_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module diff_sq_acc
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc_ama_sbkb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module diff_sq_acc_ama_sbkb_DSP48_0
-INFO: [VRFC 10-311] analyzing module diff_sq_acc_ama_sbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc_AXILiteS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diff_sq_acc_AXILiteS_s_axi
+INFO: [VRFC 10-311] analyzing module diff_sq_acc_AXILiteS_s_axi_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc_mac_mbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diff_sq_acc_mac_mbkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module diff_sq_acc_mac_mbkb
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.diff_sq_acc_ama_sbkb_DSP48_0
-Compiling module xil_defaultlib.diff_sq_acc_ama_sbkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.diff_sq_acc_AXILiteS_s_axi_ram(D...
+Compiling module xil_defaultlib.diff_sq_acc_AXILiteS_s_axi
+Compiling module xil_defaultlib.diff_sq_acc_mac_mbkb_DSP48_0
+Compiling module xil_defaultlib.diff_sq_acc_mac_mbkb(ID=1,NUM_ST...
 Compiling module xil_defaultlib.diff_sq_acc
-Compiling module xil_defaultlib.AESL_automem_a_V
-Compiling module xil_defaultlib.AESL_automem_b_V
+Compiling module xil_defaultlib.AESL_axi_slave_AXILiteS
 Compiling module xil_defaultlib.apatb_diff_sq_acc_top
 Compiling module work.glbl
 Built simulation snapshot diff_sq_acc
@@ -51,9 +53,9 @@ Built simulation snapshot diff_sq_acc
   **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
-source C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/xsim.dir/diff_sq_acc/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/xsim.dir/diff_sq_acc/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Dec 21 17:38:43 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Mon Dec 21 17:38:43 2020...
+source D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/xsim.dir/diff_sq_acc/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/xsim.dir/diff_sq_acc/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Dec 23 18:13:11 2020. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 23 18:13:11 2020...
 
 ****** xsim v2019.2 (64-bit)
   **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
@@ -68,26 +70,33 @@ source diff_sq_acc.tcl
 ## log_wave -r /
 WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
 ## set designtopgroup [add_wave_group "Design Top Signals"]
-## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
-## set dout_group [add_wave_group dout(wire) -into $coutputgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/dout_V_ap_vld -into $dout_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/dout_V -into $dout_group -radix hex
-## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
-## set b_group [add_wave_group b(memory) -into $cinputgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/b_V_q0 -into $b_group -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/b_V_ce0 -into $b_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/b_V_address0 -into $b_group -radix hex
-## set a_group [add_wave_group a(memory) -into $cinputgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/a_V_q0 -into $a_group -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/a_V_ce0 -into $a_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/a_V_address0 -into $a_group -radix hex
-## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_start -into $blocksiggroup
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set a__b__dout__return_group [add_wave_group a__b__dout__return(axi_slave) -into $cinoutgroup]
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/interrupt -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_BRESP -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_BREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_BVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_RRESP -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_RDATA -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_RREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_RVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_ARREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_ARVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_ARADDR -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_WSTRB -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_WDATA -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_WREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_WVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_AWREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_AWVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_AWADDR -into $a__b__dout__return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake(internal)" -into $designtopgroup]
 ## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_done -into $blocksiggroup
 ## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_idle -into $blocksiggroup
 ## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_ready -into $blocksiggroup
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_start -into $blocksiggroup
 ## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_rst -into $resetgroup
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_rst_n -into $resetgroup
 ## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
 ## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_clk -into $clockgroup
 ## set testbenchgroup [add_wave_group "Test Bench Signals"]
@@ -100,19 +109,26 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_diff_sq_acc_top/LENGTH_a_V -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_diff_sq_acc_top/LENGTH_b_V -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_diff_sq_acc_top/LENGTH_dout_V -into $tb_portdepth_group -radix hex
-## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
-## set tb_dout_group [add_wave_group dout(wire) -into $tbcoutputgroup]
-## add_wave /apatb_diff_sq_acc_top/dout_V_ap_vld -into $tb_dout_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/dout_V -into $tb_dout_group -radix hex
-## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
-## set tb_b_group [add_wave_group b(memory) -into $tbcinputgroup]
-## add_wave /apatb_diff_sq_acc_top/b_V_q0 -into $tb_b_group -radix hex
-## add_wave /apatb_diff_sq_acc_top/b_V_ce0 -into $tb_b_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/b_V_address0 -into $tb_b_group -radix hex
-## set tb_a_group [add_wave_group a(memory) -into $tbcinputgroup]
-## add_wave /apatb_diff_sq_acc_top/a_V_q0 -into $tb_a_group -radix hex
-## add_wave /apatb_diff_sq_acc_top/a_V_ce0 -into $tb_a_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/a_V_address0 -into $tb_a_group -radix hex
+## set tbcinoutgroup [add_wave_group "C InOuts" -into $testbenchgroup]
+## set tb_a__b__dout__return_group [add_wave_group a__b__dout__return(axi_slave) -into $tbcinoutgroup]
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_INTERRUPT -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_BRESP -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_BREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_BVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_RRESP -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_RDATA -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_RREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_RVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_ARREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_ARVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_ARADDR -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_WSTRB -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_WDATA -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_WREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_WVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_AWREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_AWVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_AWADDR -into $tb_a__b__dout__return_group -radix hex
 ## save_wave_config diff_sq_acc.wcfg
 ## run all
 ////////////////////////////////////////////////////////////////////////////////////
@@ -122,20 +138,20 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 10 [0.00%] @ "110000"
-// RTL Simulation : 1 / 10 [100.00%] @ "242000"
-// RTL Simulation : 2 / 10 [100.00%] @ "370000"
-// RTL Simulation : 3 / 10 [100.00%] @ "498000"
-// RTL Simulation : 4 / 10 [100.00%] @ "626000"
-// RTL Simulation : 5 / 10 [100.00%] @ "754000"
-// RTL Simulation : 6 / 10 [100.00%] @ "882000"
-// RTL Simulation : 7 / 10 [100.00%] @ "1010000"
-// RTL Simulation : 8 / 10 [100.00%] @ "1138000"
-// RTL Simulation : 9 / 10 [100.00%] @ "1266000"
-// RTL Simulation : 10 / 10 [100.00%] @ "1394000"
+// RTL Simulation : 1 / 10 [0.00%] @ "678000"
+// RTL Simulation : 2 / 10 [0.00%] @ "1254000"
+// RTL Simulation : 3 / 10 [0.00%] @ "1830000"
+// RTL Simulation : 4 / 10 [0.00%] @ "2406000"
+// RTL Simulation : 5 / 10 [0.00%] @ "2982000"
+// RTL Simulation : 6 / 10 [0.00%] @ "3558000"
+// RTL Simulation : 7 / 10 [0.00%] @ "4134000"
+// RTL Simulation : 8 / 10 [0.00%] @ "4710000"
+// RTL Simulation : 9 / 10 [0.00%] @ "5286000"
+// RTL Simulation : 10 / 10 [100.00%] @ "5862000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1410 ns : File "C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc.autotb.v" Line 323
+$finish called at time : 5878 ns : File "D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc.autotb.v" Line 282
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Dec 21 17:38:50 2020...
+INFO: [Common 17-206] Exiting xsim at Wed Dec 23 18:13:38 2020...
 got 442798871 expected 442798871
 got 262947932 expected 262947932
 got 314183194 expected 314183194

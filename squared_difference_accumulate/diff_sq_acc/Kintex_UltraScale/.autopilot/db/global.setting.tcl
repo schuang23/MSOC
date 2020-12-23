@@ -14,7 +14,7 @@ set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 1
-set ResetLevelFlag 1
+set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
@@ -39,10 +39,10 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xcku035:-fbva676:-1-i
+set TargetInfo xc7z020:-clg400:-1
 set SourceFiles {sc {} c ../../src/diff_sq_acc.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/Kintex_UltraScale.directive
+set DirectiveFile D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/Kintex_UltraScale.directive
 set TBFiles {verilog ../../tb/diff_sq_acc_tb.cpp bc ../../tb/diff_sq_acc_tb.cpp vhdl ../../tb/diff_sq_acc_tb.cpp sc ../../tb/diff_sq_acc_tb.cpp cas ../../tb/diff_sq_acc_tb.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -59,5 +59,5 @@ set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/kintexu/kintexu xilinx/kintexu/kintexu_fpv7}}}
+set PlatformFiles {{DefaultPlatform {xilinx/zynq/zynq xilinx/zynq/zynq_fpv6}}}
 set HPFPO 0

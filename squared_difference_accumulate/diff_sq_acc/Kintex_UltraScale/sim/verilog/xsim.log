@@ -2,12 +2,12 @@
 # xsim v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Dec 21 17:38:44 2020
-# Process ID: 41476
-# Current directory: C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog
+# Start of session at: Wed Dec 23 18:13:12 2020
+# Process ID: 11356
+# Current directory: D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/diff_sq_acc/xsim_script.tcl}
-# Log file: C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/xsim.log
-# Journal file: C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog\xsim.jou
+# Log file: D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/xsim.log
+# Journal file: D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog\xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/diff_sq_acc/xsim_script.tcl
 # xsim {diff_sq_acc} -autoloadwcfg -tclbatch {diff_sq_acc.tcl}
@@ -17,26 +17,33 @@ source diff_sq_acc.tcl
 ## log_wave -r /
 WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
 ## set designtopgroup [add_wave_group "Design Top Signals"]
-## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
-## set dout_group [add_wave_group dout(wire) -into $coutputgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/dout_V_ap_vld -into $dout_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/dout_V -into $dout_group -radix hex
-## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
-## set b_group [add_wave_group b(memory) -into $cinputgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/b_V_q0 -into $b_group -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/b_V_ce0 -into $b_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/b_V_address0 -into $b_group -radix hex
-## set a_group [add_wave_group a(memory) -into $cinputgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/a_V_q0 -into $a_group -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/a_V_ce0 -into $a_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/a_V_address0 -into $a_group -radix hex
-## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_start -into $blocksiggroup
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set a__b__dout__return_group [add_wave_group a__b__dout__return(axi_slave) -into $cinoutgroup]
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/interrupt -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_BRESP -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_BREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_BVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_RRESP -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_RDATA -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_RREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_RVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_ARREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_ARVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_ARADDR -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_WSTRB -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_WDATA -into $a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_WREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_WVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_AWREADY -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_AWVALID -into $a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/s_axi_AXILiteS_AWADDR -into $a__b__dout__return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake(internal)" -into $designtopgroup]
 ## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_done -into $blocksiggroup
 ## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_idle -into $blocksiggroup
 ## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_ready -into $blocksiggroup
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_start -into $blocksiggroup
 ## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
-## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_rst -into $resetgroup
+## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_rst_n -into $resetgroup
 ## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
 ## add_wave /apatb_diff_sq_acc_top/AESL_inst_diff_sq_acc/ap_clk -into $clockgroup
 ## set testbenchgroup [add_wave_group "Test Bench Signals"]
@@ -49,19 +56,26 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 ## add_wave /apatb_diff_sq_acc_top/LENGTH_a_V -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_diff_sq_acc_top/LENGTH_b_V -into $tb_portdepth_group -radix hex
 ## add_wave /apatb_diff_sq_acc_top/LENGTH_dout_V -into $tb_portdepth_group -radix hex
-## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
-## set tb_dout_group [add_wave_group dout(wire) -into $tbcoutputgroup]
-## add_wave /apatb_diff_sq_acc_top/dout_V_ap_vld -into $tb_dout_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/dout_V -into $tb_dout_group -radix hex
-## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
-## set tb_b_group [add_wave_group b(memory) -into $tbcinputgroup]
-## add_wave /apatb_diff_sq_acc_top/b_V_q0 -into $tb_b_group -radix hex
-## add_wave /apatb_diff_sq_acc_top/b_V_ce0 -into $tb_b_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/b_V_address0 -into $tb_b_group -radix hex
-## set tb_a_group [add_wave_group a(memory) -into $tbcinputgroup]
-## add_wave /apatb_diff_sq_acc_top/a_V_q0 -into $tb_a_group -radix hex
-## add_wave /apatb_diff_sq_acc_top/a_V_ce0 -into $tb_a_group -color #ffff00 -radix hex
-## add_wave /apatb_diff_sq_acc_top/a_V_address0 -into $tb_a_group -radix hex
+## set tbcinoutgroup [add_wave_group "C InOuts" -into $testbenchgroup]
+## set tb_a__b__dout__return_group [add_wave_group a__b__dout__return(axi_slave) -into $tbcinoutgroup]
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_INTERRUPT -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_BRESP -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_BREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_BVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_RRESP -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_RDATA -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_RREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_RVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_ARREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_ARVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_ARADDR -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_WSTRB -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_WDATA -into $tb_a__b__dout__return_group -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_WREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_WVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_AWREADY -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_AWVALID -into $tb_a__b__dout__return_group -color #ffff00 -radix hex
+## add_wave /apatb_diff_sq_acc_top/AXILiteS_AWADDR -into $tb_a__b__dout__return_group -radix hex
 ## save_wave_config diff_sq_acc.wcfg
 ## run all
 ////////////////////////////////////////////////////////////////////////////////////
@@ -71,17 +85,17 @@ WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of o
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 10 [0.00%] @ "110000"
-// RTL Simulation : 1 / 10 [100.00%] @ "242000"
-// RTL Simulation : 2 / 10 [100.00%] @ "370000"
-// RTL Simulation : 3 / 10 [100.00%] @ "498000"
-// RTL Simulation : 4 / 10 [100.00%] @ "626000"
-// RTL Simulation : 5 / 10 [100.00%] @ "754000"
-// RTL Simulation : 6 / 10 [100.00%] @ "882000"
-// RTL Simulation : 7 / 10 [100.00%] @ "1010000"
-// RTL Simulation : 8 / 10 [100.00%] @ "1138000"
-// RTL Simulation : 9 / 10 [100.00%] @ "1266000"
-// RTL Simulation : 10 / 10 [100.00%] @ "1394000"
+// RTL Simulation : 1 / 10 [0.00%] @ "678000"
+// RTL Simulation : 2 / 10 [0.00%] @ "1254000"
+// RTL Simulation : 3 / 10 [0.00%] @ "1830000"
+// RTL Simulation : 4 / 10 [0.00%] @ "2406000"
+// RTL Simulation : 5 / 10 [0.00%] @ "2982000"
+// RTL Simulation : 6 / 10 [0.00%] @ "3558000"
+// RTL Simulation : 7 / 10 [0.00%] @ "4134000"
+// RTL Simulation : 8 / 10 [0.00%] @ "4710000"
+// RTL Simulation : 9 / 10 [0.00%] @ "5286000"
+// RTL Simulation : 10 / 10 [100.00%] @ "5862000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1410 ns : File "C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc.autotb.v" Line 323
+$finish called at time : 5878 ns : File "D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/sim/verilog/diff_sq_acc.autotb.v" Line 282
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Dec 21 17:38:50 2020...
+INFO: [Common 17-206] Exiting xsim at Wed Dec 23 18:13:38 2020...

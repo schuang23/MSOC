@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="matrixmul" xd:componentRef="matrixmul" xd:initiationInterval="32793" xd:clockPeriod="5.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="A[][]" xd:originalName="A" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x1000" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:arg xd:name="B[][]" xd:originalName="B" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x2000" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:arg xd:name="AB[][]" xd:originalName="AB" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x3000" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="32792" xd:worst-case="32792" xd:average-case="32792"/>
+  <xd:resourceEstimates xd:LUT="2433" xd:FF="7047" xd:BRAM="6" xd:DSP="63"/>
+</xd:acceleratorMap>

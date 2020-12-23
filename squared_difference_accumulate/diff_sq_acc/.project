@@ -29,62 +29,62 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/.apc/.src</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/.apc/.tb</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/.apc/.tb</location>
 		</link>
 		<link>
 			<name>Kintex_UltraScale/constraints</name>
 			<type>2</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/.tcls</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/.tcls</location>
 		</link>
 		<link>
-			<name>improve/constraints</name>
+			<name>baseline/constraints</name>
 			<type>2</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/improve/.tcls</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/baseline/.tcls</location>
 		</link>
 		<link>
 			<name>source/diff_sq_acc.cpp</name>
 			<type>1</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/src/diff_sq_acc.cpp</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/src/diff_sq_acc.cpp</location>
 		</link>
 		<link>
 			<name>testbench/diff_sq_acc_tb.cpp</name>
 			<type>1</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/tb/diff_sq_acc_tb.cpp</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/tb/diff_sq_acc_tb.cpp</location>
 		</link>
 		<link>
 			<name>Kintex_UltraScale/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/Kintex_UltraScale.directive</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/Kintex_UltraScale.directive</location>
 		</link>
 		<link>
 			<name>Kintex_UltraScale/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/directives.tcl</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/directives.tcl</location>
 		</link>
 		<link>
 			<name>Kintex_UltraScale/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/script.tcl</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/Kintex_UltraScale/script.tcl</location>
 		</link>
 		<link>
-			<name>improve/constraints/.xml.directive</name>
+			<name>baseline/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/improve/improve.directive</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/baseline/baseline.directive</location>
 		</link>
 		<link>
-			<name>improve/constraints/directives.tcl</name>
+			<name>baseline/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/improve/directives.tcl</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/baseline/directives.tcl</location>
 		</link>
 		<link>
-			<name>improve/constraints/script.tcl</name>
+			<name>baseline/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/admin/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/improve/script.tcl</location>
+			<location>D:/msoc/HLx_Examples-master/Math/squared_difference_accumulate/diff_sq_acc/baseline/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

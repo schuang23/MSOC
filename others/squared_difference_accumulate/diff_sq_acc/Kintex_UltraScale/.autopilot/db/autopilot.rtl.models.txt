@@ -1,2 +1,0 @@
-diff_sq_acc_ama_sbkb
-diff_sq_acc

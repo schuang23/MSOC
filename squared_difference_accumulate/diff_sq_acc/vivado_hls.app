@@ -11,7 +11,7 @@
     </files>
     <solutions xmlns="">
         <solution name="Kintex_UltraScale" status="inactive"/>
-        <solution name="improve" status="active"/>
+        <solution name="baseline" status="active"/>
     </solutions>
 </project>
 

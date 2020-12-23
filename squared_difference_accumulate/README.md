@@ -32,9 +32,9 @@ This simple example shows how to use Vivado HLS to code a "Squared Difference Ac
 
 **Directory structure**
 * **README.md** - introduce the project, algorithm, reference ....
-* **diff_sq_acc/Kintex_UltraScale/**
+* **diff_sq_acc/baseline/**
   * original code from open source and HLS csynth,csim,cosim report
-* **diff_sq_acc/improve/** 
+* **diff_sq_acc/Kintex_UltraScale/** 
   * improved code (use pragma) and HLS csynth,csim,cosim report
 
 * **xhls_Squared_difference_accumulate/** - report

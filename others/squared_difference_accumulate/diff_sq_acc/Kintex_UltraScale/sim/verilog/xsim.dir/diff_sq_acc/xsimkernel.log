@@ -1,7 +1,0 @@
-Running: xsim.dir/diff_sq_acc/xsimk.exe -simmode gui -wdb diff_sq_acc.wdb -simrunnum 0 -socket 56877
-Design successfully loaded
-Design Loading Memory Usage: 5928 KB (Peak: 5928 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 8112 KB (Peak: 8112 KB)
-Simulation CPU Usage: 61 ms
