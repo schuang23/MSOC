@@ -31,9 +31,9 @@ This simple example shows how to use Vivado HLS to code a "cordic" function
 
 **Directory structure**
 * **README.md** - introduce the project, algorithm, reference ....
-* **cordic_hls/baseline//**
+* **cordic_hls/baseline/**
   * original code from open source and HLS csynth,csim,cosim report
-* **cordic_hls/Improved//** 
+* **cordic_hls/Improved/** 
   * improved code (use pragma) and HLS csynth,csim,cosim report
 
 * **pp4fpga_CORDIC/** - report
